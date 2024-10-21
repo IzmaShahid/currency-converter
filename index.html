@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #f3f3f3
+    }
+    #container{
+     width: 100%;
+     height: 100vh;
+     text-align: center;
+     margin-top: 0.5rem;
+     padding: 1rem 2rem;
+ font-size: x-large;
+    }
+    label{
+        display: block;
+    }
+</style>
+<body>
+    <div id="container">
+        <h1>Currency Converter In PKR</h1>
+        <label for="currency">Select Currency:</label>
+        <select id="currency">
+            <option value="usd">USD - US Dollar</option>
+            <option value="eur">EUR - Euro</option>
+            <option value="aed">AED - UAE Dirham</option>
+            <option value="sar">SAR - Saudi Riyal</option>
+        </select>
+        <label for="amount">Enter Amount:</label>
+        <input type="text" id="amount">
+        <p id="para"></p>
+        <button onclick="convertCurrency()">Convert</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
